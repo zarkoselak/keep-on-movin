@@ -6,7 +6,12 @@ import React from 'react';
 class Header extends React.Component {
   render () {
     return (
-    	<h1 className="title">HEADER</h1>
+    	<header className="header">
+    		<div className="header-wrapper">
+    			<img src={require('../../images/logo.png')} />
+    			<h1>Keep on movin'</h1>
+    		</div>
+    	</header>
     );
   }
 }

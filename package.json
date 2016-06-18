@@ -18,7 +18,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "html-loader": "^0.4.3",
-    "html-webpack-plugin": "^2.15.0",
+    "html-webpack-plugin": "^2.17.0",
     "img-loader": "^1.2.2",
     "node-sass": "^3.4.2",
     "postcss-loader": "^0.8.2",
@@ -30,7 +30,13 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "ajax-request": "^1.2.1",
+    "fs": "0.0.2",
+    "jquery": "^2.2.3",
+    "jsonp": "^0.2.0",
     "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "react-dom": "^15.0.1",
+    "react-router": "^2.4.0",
+    "simple-ajax": "^2.5.0"
   }
 }
