@@ -2,11 +2,15 @@
   "name": "keep-on-movin",
   "version": "1.0.0",
   "description": "office app",
-  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "babel-node tools/startMsg.js",
+    "start": "npm-run-all --parallel open:src lint:watch",
+    "open:src": "babel-node tools/srcServer.js",
+    "lint": "node_modules/.bin/esw webpack.config.* src tools",
+    "lint:watch": "npm run lint -- --watch",
+    "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\""
   },
-  "author": "",
+  "author": "Zarko Selak",
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "6.8.0",
@@ -30,6 +34,7 @@
     "babel-preset-react": "6.5.0",
     "babel-preset-react-hmre": "1.1.1",
     "babel-register": "6.8.0",
+    "chai": "^3.5.0",
     "colors": "1.1.2",
     "compression": "1.6.1",
     "cross-env": "1.0.7",
@@ -58,5 +63,5 @@
     "webpack": "1.13.0",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"
-  },
+  }
 }
