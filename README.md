@@ -1,3 +1,3 @@
 Keep on movin!
 
-node/es6/webpack/react/redux
+node/es6/babel/webpack/react/redux
